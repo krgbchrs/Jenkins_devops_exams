@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        pollSCM '* * * * *'
+    }
+
     environment {
         // Mettez ici votre identifiant DockerHub
         registry = "chriskrack"
