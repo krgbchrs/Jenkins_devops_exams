@@ -11,8 +11,6 @@ spec:
   selector:
     app: movie-db
 ---
-# Version "Junior" : On utilise un Deployment classique au lieu d'un StatefulSet.
-# C'est plus simple à comprendre et suffisant pour une instance unique (Single Instance).
 apiVersion: apps/v1
 kind: Deployment
 metadata:
