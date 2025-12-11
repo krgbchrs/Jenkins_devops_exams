@@ -89,7 +89,7 @@ pipeline {
                         --set service.port=8000 \
                         --set service.nodePort=30008 \
                         --set env[0].name=DATABASE_URI \
-                        --set env[0].value='postgresql://movie_user:movie_password@movie_db:5432/movie_db'
+                        --set env[0].value='postgresql://movie_user:movie_password@movie-db:5432/movie_db'
                     """
                 }
             }
