@@ -76,7 +76,7 @@ pipeline {
                         --set image.tag=${IMAGE_TAG} \
                         --set service.port=8001 \
                         --set service.nodePort=30007 \
-                        --set env[0].name=DATABASE_URL \
+                        --set env[0].name=DATABASE_URI \
                         --set env[0].value='postgresql://cast_user:cast_password@cast-db:5432/cast_db'
                     """
 
@@ -88,7 +88,7 @@ pipeline {
                         --set image.tag=${IMAGE_TAG} \
                         --set service.port=8000 \
                         --set service.nodePort=30008 \
-                        --set env[0].name=DATABASE_URL \
+                        --set env[0].name=DATABASE_URI \
                         --set env[0].value='postgresql://movie_user:movie_password@movie_db:5432/movie_db'
                     """
                 }
