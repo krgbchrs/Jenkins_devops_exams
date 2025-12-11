@@ -75,6 +75,7 @@ pipeline {
                         --set image.repository=${registry}/cast-service \
                         --set image.tag=${IMAGE_TAG} \
                         --set service.port=8001 \
+                        --set service.targetPort=8001 \
                         --set service.nodePort=30007 \
                         --set env[0].name=DATABASE_URI \
                         --set env[0].value='postgresql://cast_user:cast_password@cast-db:5432/cast_db' \
